@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 101,
+    "Title": "Turkish Coffee",
+    "Description": "Strong and unfiltered coffee served in a small cup."
+  },
+  {
+    "Id": 102,
+    "Title": "Flat White",
+    "Description": "Espresso with steamed milk and a velvety texture."
+  },
+  {
+    "Id": 103,
+    "Title": "Irish Coffee",
+    "Description": "Hot coffee with Irish whiskey, sugar, and cream."
+  }
+]
