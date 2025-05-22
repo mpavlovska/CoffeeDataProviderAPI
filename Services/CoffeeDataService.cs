@@ -1,7 +1,7 @@
 ﻿using CoffeeDataProviderAPI.Models;
 using System.Text.Json;
 
-namespace CoffeeDataProviderAPI.Data;
+namespace CoffeeDataProviderAPI.Services;
 
 public class CoffeeDataService
 {

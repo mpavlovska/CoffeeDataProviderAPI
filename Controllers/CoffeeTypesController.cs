@@ -1,5 +1,5 @@
-﻿using CoffeeDataProviderAPI.Data;
-using CoffeeDataProviderAPI.Models;
+﻿using CoffeeDataProviderAPI.Models;
+using CoffeeDataProviderAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoffeeDataProviderAPI.Controllers;
@@ -8,16 +8,16 @@ namespace CoffeeDataProviderAPI.Controllers;
 [Route("api/external-coffee-types")]
 public class CoffeeTypesController : ControllerBase
 {
-    private readonly CoffeeDataService _data;
+    private readonly CoffeeDataService _coffeeDataService;
 
-    public CoffeeTypesController(CoffeeDataService data)
+    public CoffeeTypesController(CoffeeDataService coffeeDataService)
     {
-        _data = data;
+        _coffeeDataService = coffeeDataService;
     }
 
     [HttpGet]
     public ActionResult<IEnumerable<CoffeeType>> Get()
     {
-        return Ok(_data.GetAll());
+        return Ok(_coffeeDataService.GetAll());
     }
 }
